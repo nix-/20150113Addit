@@ -1,0 +1,3 @@
+Drivers/USB/Core/HAL/LPC11UXX/HAL_LPC11Uxx.o \
+ Drivers/USB/Core/HAL/LPC11UXX/HAL_LPC11Uxx.d: \
+ ../Drivers/USB/Core/HAL/LPC11UXX/HAL_LPC11Uxx.c
