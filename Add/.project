@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>Addit</name>
+	<name>Add</name>
 	<comment></comment>
 	<projects>
 		<project>nxp_xpresso_1769_board_lib</project>

@@ -1,20 +1,9 @@
 /*
-===============================================================================
- Name        : Addit.c
- Author      : $(author)
- Version     :
- Copyright   : $(copyright)
- Description : main definition
-===============================================================================
-*/
-
-#ifdef __USE_CMSIS
-#include "LPC17xx.h"
-#endif
-
-#include <cr_section_macros.h>
-
-#include <stdio.h>
+ * main.c
+ *
+ *  Created on: Jan 16, 2015
+ *      Author: nikica
+ */
 
 #include "VirtualSerial.h"
 #include <string.h>
