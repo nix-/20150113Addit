@@ -10,12 +10,6 @@
 
 #include "console.h"
 
-#include "drv8840.h"
-#include "interfaces.h"
-
-drv8840 Motor1;
-drv8840State Motor1_state = {1, 1, 1, 0, 0, 1, 0x1f};
-
 static void sendBuff(const char *buff);
 
 /*****************************************************************************
@@ -96,31 +90,6 @@ static void EchoCharacter(void)
 	if (CDC_Device_BytesReceived(&VirtualSerial_CDC_Interface)) {
 		// Tuka vraka echo
 
-/*		MC24LC64_Init(); // ToDo: treba da se iskoristat funkciite koi se povikuvaat vo ovaa rutina
-
-		//Chip_I2C_Init(I2C1);
-		char buff[]="n";
-		uint8_t RdBuffer[10];
-
-		//MC24LC64_Wr(0x000F, "Mr Nikica.S", sizeof("Mr Nikica.S"));
-
-		MC24LC64_Rd(0x000F, RdBuffer, sizeof(RdBuffer));
-
-		//PCF8574_Wr(PCF8574_ADDR, 0xFF);
-
-		PCF8574_Rd(PCF8574_ADDR, RdBuffer);
-
-		HD44780_IO_Init();
-
-		display(1,2, "Nikica Srezoski");
-
-		while(1){
-			test = takeDataADC_ADS1231();
-			sprintf(buff, "%d\r\n", test);
-			CDC_Device_SendData(&VirtualSerial_CDC_Interface, buff, strlen(buff));
-		}
-*/
-
 		recv_byte[0] = CDC_Device_ReceiveByte(&VirtualSerial_CDC_Interface);
 		CDC_Device_SendData(&VirtualSerial_CDC_Interface, (char *) recv_byte, 1);
 
@@ -187,18 +156,6 @@ int main(void)
 
 	initInterface();
 
-	initDriver(	&Motor1,
-				setResetModule1,
-				setSleepModule1,
-				readFaultModule1,
-				setDecayModule1,
-				setPhaseModule1,
-				setEnableModule1,
-				setCurrentModule1
-				);
-
-	setDriverMode(&Motor1, &Motor1_state);
-
 	for (;; ) {
 #if defined(USB_DEVICE_ROM_DRIVER)
 		UsbdCdc_IO_Buffer_Sync_Task();
@@ -214,25 +171,6 @@ int main(void)
 		USB_USBTask(VirtualSerial_CDC_Interface.Config.PortNumber, USB_MODE_Device);
 #endif
 
-		Delay_MS(1000/Motor1_state.CurrentValue);
-
-		switch(tog){
-		case 0:
-			Motor1_state.CurrentValue++;
-			if(Motor1_state.CurrentValue == 22)
-				tog = 1;
-			Motor1_state.CurrentValue &= 0x1f;
-			break;
-		case 1:
-			Motor1_state.CurrentValue--;
-			if(Motor1_state.CurrentValue == 6)
-				tog = 0;
-			Motor1_state.CurrentValue &= 0x1f;
-			break;
-		}
-
-		//Motor1_state.PhasePin = tog;
-		setDriverMode(&Motor1, &Motor1_state);
 	}
 }
 

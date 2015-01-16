@@ -1,0 +1,65 @@
+<!DOCTYPE CrossStudio_for_ARM_Session_File>
+<session>
+ <Bookmarks/>
+ <Breakpoints/>
+ <ExecutionProfileWindow/>
+ <Memory1>
+  <MemoryWindow autoEvaluate="0" addressText="" numColumns="8" sizeText="" dataSize="1" radix="16" name="XCell_FW" addressSpace="" />
+ </Memory1>
+ <Memory2>
+  <MemoryWindow autoEvaluate="0" addressText="" numColumns="8" sizeText="" dataSize="1" radix="16" name="XCell_FW" addressSpace="" />
+ </Memory2>
+ <Memory3>
+  <MemoryWindow autoEvaluate="0" addressText="" numColumns="8" sizeText="" dataSize="1" radix="16" name="XCell_FW" addressSpace="" />
+ </Memory3>
+ <Memory4>
+  <MemoryWindow autoEvaluate="0" addressText="" numColumns="8" sizeText="" dataSize="1" radix="16" name="XCell_FW" addressSpace="" />
+ </Memory4>
+ <Project>
+  <ProjectSessionItem path="XCell_FW" name="unnamed" />
+  <ProjectSessionItem path="XCell_FW;XCell_FW" name="unnamed" />
+  <ProjectSessionItem path="XCell_FW;XCell_FW;Source Files" name="unnamed" />
+  <ProjectSessionItem path="XCell_FW;XCell_FW;Std Peripheral Lib" name="unnamed" />
+  <ProjectSessionItem path="XCell_FW;XCell_FW;Std Peripheral Lib;Src" name="unnamed" />
+ </Project>
+ <Register1>
+  <RegisterWindow openNodes="CPU - Current Context" binaryNodes="" hiddenNodes="" unsignedNodes="" visibleGroups="CPU - Current Context;CPU" decimalNodes="" octalNodes="" asciiNodes="" name="XCell_FW" />
+ </Register1>
+ <Register2>
+  <RegisterWindow openNodes="CPU - Current Context" binaryNodes="" hiddenNodes="" unsignedNodes="" visibleGroups="CPU - Current Context;CPU" decimalNodes="" octalNodes="" asciiNodes="" name="XCell_FW" />
+ </Register2>
+ <Register3>
+  <RegisterWindow openNodes="CPU - Current Context" binaryNodes="" hiddenNodes="" unsignedNodes="" visibleGroups="CPU - Current Context;CPU" decimalNodes="" octalNodes="" asciiNodes="" name="XCell_FW" />
+ </Register3>
+ <Register4>
+  <RegisterWindow openNodes="CPU - Current Context" binaryNodes="" hiddenNodes="" unsignedNodes="" visibleGroups="CPU - Current Context;CPU" decimalNodes="" octalNodes="" asciiNodes="" name="XCell_FW" />
+ </Register4>
+ <TargetWindow programAction="" uploadFileType="" programLoadAddress="" programSize="" uploadFileName="" uploadMemoryInterface="" programFileName="" uploadStartAddress="" programFileType="" uploadSize="" programMemoryInterface="" />
+ <TraceWindow>
+  <Trace enabled="Yes" />
+ </TraceWindow>
+ <Watch1>
+  <Watches active="1" update="Never" />
+ </Watch1>
+ <Watch2>
+  <Watches active="0" update="Never" />
+ </Watch2>
+ <Watch3>
+  <Watches active="0" update="Never" />
+ </Watch3>
+ <Watch4>
+  <Watches active="0" update="Never" />
+ </Watch4>
+ <Files>
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Latin1" x="16" debugPath="C:\Proj\xcell-fw\main.c" y="40" path="C:\Proj\xcell-fw\main.c" left="0" selected="1" name="unnamed" top="26" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Latin1" x="0" debugPath="C:\proj\xcell-fw\stm32f4xx_hal_msp.c" y="73" path="C:\proj\xcell-fw\stm32f4xx_hal_msp.c" left="0" selected="0" name="unnamed" top="62" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Latin1" x="0" debugPath="C:\proj\xcell-fw\main.h" y="65" path="C:\proj\xcell-fw\main.h" left="0" selected="0" name="unnamed" top="57" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Latin1" x="14" debugPath="C:\proj\xcell-fw\stm32f4xx_it.c" y="162" path="C:\proj\xcell-fw\stm32f4xx_it.c" left="0" selected="0" name="unnamed" top="151" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Latin1" x="0" debugPath="C:\proj\xcell-fw\stm32_stdlib\src\stm32f4xx_hal_can.c" y="200" path="C:\proj\xcell-fw\stm32_stdlib\src\stm32f4xx_hal_can.c" left="0" selected="0" name="unnamed" top="177" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Latin1" x="0" debugPath="C:\proj\xcell-fw\stm32_stdlib\src\stm32f4xx_hal_rcc.c" y="241" path="C:\proj\xcell-fw\stm32_stdlib\src\stm32f4xx_hal_rcc.c" left="0" selected="0" name="unnamed" top="241" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Latin1" x="0" debugPath="C:\Proj\xcell-fw\stm32f4xx_hal_conf.h" y="99" path="C:\Proj\xcell-fw\stm32f4xx_hal_conf.h" left="0" selected="0" name="unnamed" top="93" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Latin1" x="0" debugPath="C:\Proj\xcell-fw\STM32_StdLib\Inc\stm32f4xx_hal.h" y="0" path="C:\Proj\xcell-fw\STM32_StdLib\Inc\stm32f4xx_hal.h" left="0" selected="0" name="unnamed" top="192" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Latin1" x="0" debugPath="C:\proj\xcell-fw\stm32_stdlib\src\stm32f4xx_hal.c" y="304" path="C:\proj\xcell-fw\stm32_stdlib\src\stm32f4xx_hal.c" left="0" selected="0" name="unnamed" top="294" />
+ </Files>
+ <ARMCrossStudioWindow activeProject="XCell_FW" autoConnectTarget="SEGGER J-Link" debugSearchFileMap="" fileDialogInitialDirectory="C:\Proj\xcell-fw" fileDialogDefaultFilter="*.c" autoConnectCapabilities="266111" debugSearchPath="" buildConfiguration="THUMB Debug" />
+</session>

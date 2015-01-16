@@ -11,6 +11,8 @@
 #define HIGH	1
 #define LOW		0
 
+
+// ToDo: ova treba da se brishe nadole go ostaviv samo za primer
 // DRV8840 module 1 //
 /********************
 P1.28	- Reset
